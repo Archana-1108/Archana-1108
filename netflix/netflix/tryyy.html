@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Firstname</label>
+                                    <input type="text" 
+                                    class="form-control" 
+                                    placeholder="Firstname"/>
+                                  </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Lastname</label>
+                                        <input type="text" 
+                                        class="form-control" 
+                                        placeholder="Lastname"/>
+                                      </div>
+                                     </div>
+                                     <div class="col-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">email</label>
+                                            <input type="text" 
+                                            class="form-control" 
+                                            placeholder="email"/>
+                                          </div>
+                                         </div>
+                                         <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">phone number</label>
+                                                <input type="text" 
+                                                class="form-control" 
+                                                placeholder="phone number"/>    
+                                              </div>
+                                       </div>
+                                       <div class="col-6">
+                                        <button class="btn btn-primary" type="submit">Button</button>
+                                   </div>
+                                   </div>
+                                      </div>
+                                    </div>
+                               </div>
+                               <div class="col-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">s.no</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">phoneno</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody id="userDetails">
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                              </tr>
+
+                                            </tbody>
+                                          </table> 
+    </div>
+     </div>
+  </div>
+  <div>
+</body>
+<script>
+    let userlist=[{
+        Firstname:'vijay',
+        Lastname:'kutty',
+        email:'vijay@gmail.com',
+        phoneno:'8778841443'
+
+    },
+    {
+        Firstname:'achu',
+        Lastname:'maa',
+        email:'achuma@gmail.com',
+        phoneno:'369785422'
+
+    },
+    {
+        Firstname:'Abilash',
+        Lastname:'Achu',
+        email:'Abilash@gmail.com',
+        phoneno:'12364785'
+
+    },]
+    document.getElementById('userDetails').innerHTML=userlist.map((x,index)=>{
+        return`<tr>
+                                                <th>${index+1}</th>
+                                                <td>${x.Firstname}</td>
+                                                <td>${x.Lastname}</td>
+                                                <td>${x.email}</td>
+                                                 <td>${x.phoneno}</td>
+                                                <td><button type="button" class="btn btn-primary">Edit</button></td>
+                                                <td><button type="button" class="btn btn-secondary">Delete</button></td>
+
+                                              </tr>`
+        
+    }).join("")
+</script>
+</html>

@@ -1,0 +1,71 @@
+@import url("https://fonts.gooleapis.com/css2? family=Inter:Wght@100..900&display=Swap");
+*{
+    font-family: "inetr", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.body{
+    padding: 20px;
+}
+.container{
+    max-width: 600px;
+    margin: 20px auto;
+}
+.h3{
+    font-weight: 600;
+    margin: 15px;
+    color: tomato;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn{
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+.input-Search{
+    display: flex;
+    justify-content: space-between;
+    align-items:Wright;
+    margin-bottom: 20px;
+}
+.input-Search input{
+    width: 300px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid#ccc;
+    outline: none;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+}
+.table th, .table td{
+    border: 1px solid#ddd;
+    padding: 8px;
+}
+.table th{
+    background-color: #f2f2f2;
+}
+.table tr:nth-child(even){
+      background-color: #f2f2f2;
+}
+.table:hover{
+    background-color: #ddd;
+}
+.form button{
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffff;
+    border: none;
+    background-color: darkslategrey;
+}
